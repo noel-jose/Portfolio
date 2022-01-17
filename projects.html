@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="./images/icon.png" />
+        <title>Projects</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="scroll-smooth bg-neutral-900">
+        <!-- navBar beginning -->
+        <nav class="bg-neutral-900 relative">
+            <div class="mx-auto px-5">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-white text-xl"
+                                    >Noel Jose</span
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a
+                            href="./index.html"
+                            class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300"
+                            >Home</a
+                        >
+                        <a
+                            href="./index.html#about"
+                            class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300"
+                            >About</a
+                        >
+                        <a
+                            href="./projects.html"
+                            class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300"
+                            >Projects</a
+                        >
+                        <a
+                            href="./index.html#contact"
+                            class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300"
+                            >Contact Me</a
+                        >
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg
+                                class="w-6 h-6 text-gray-500 hover:text-white"
+                                x-show="!showMenu"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active">
+                        <a
+                            href="./index.html"
+                            class="block text-sm px-2 py-4 text-white bg-neutral-900 hover:font-semibold"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./index.html#about"
+                            class="block text-sm px-2 py-4 text-white bg-neutral-900 hover:bg-grey-500 hover:font-semibold transition duration-300"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./projects.html"
+                            class="block text-sm px-2 py-4 text-white bg-neutral-900 hover:bg-grey-500 hover:font-semibold transition duration-300"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./index.html#contact"
+                            class="block text-sm px-2 py-4 text-white bg-neutral-900 hover:bg-grey-500 hover:font-semibold transition duration-300"
+                            >Contact Me</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- navbar ending -->
+
+        <!-- projects section beginning  -->
+        <section class="text-white text-center">
+            <h2 class="text-4xl md:text-5xl font-bold m-5 md:mb-12">
+                My Projects
+            </h2>
+
+            <div
+                class="flex flex-col justify-center items-center md:flex-row md:flex-wrap"
+            >
+                <!-- martial arts card -->
+                <a
+                    href="https://noel-jose.github.io/Martial-arts-game/"
+                    target="_blank"
+                >
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow-lg bg-neutral-800 m-5"
+                    >
+                        <img
+                            class="w-full"
+                            src="./images/projects/martialarts.png"
+                            alt="martial arts image"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">
+                                Martial Arts Game
+                            </div>
+                            <p class="text-neutral-100 text-base">
+                                A martial arts game simulation build using
+                                html,css and javascript
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >html</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >css</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >javascript</span
+                            >
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Todo app card -->
+                <a href="https://react-todo-noel.netlify.app/" target="_blank">
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow-lg bg-neutral-800 m-5"
+                    >
+                        <img
+                            class="w-full"
+                            src="./images/projects/todoapp.png"
+                            alt="todo app image"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Todo app</div>
+                            <p class="text-neutral-100 text-base">
+                                A Todo app created using react.js and hosted in
+                                netlify
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >react.js</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >netlify</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >todo</span
+                            >
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Nameit app card -->
+                <a href="https://nameit-webapp.netlify.app/" target="_blank">
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow-lg bg-neutral-800 m-5"
+                    >
+                        <img
+                            class="w-full"
+                            src="./images/projects/nameit.png"
+                            alt="nameit app image"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">
+                                Nameit! app
+                            </div>
+                            <p class="text-neutral-100 text-base">
+                                An react.js app that allow you to find domains
+                                for your next project
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >react.js</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >netlify</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >api</span
+                            >
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Cowibot card -->
+                <a href="https://github.com/noel-jose/CoWiBot" target="_blank">
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow-lg bg-neutral-800 m-5"
+                    >
+                        <img
+                            class="w-full"
+                            src="./images/projects/cowibot.png"
+                            alt="cowibot image"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cowibot</div>
+                            <p class="text-neutral-100 text-base">
+                                A discord bot build using node.js and discord.js
+                                that alerts us regarding available vaccine slots
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >node.js</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >discord.js</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >bot</span
+                            >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- projects section ending  -->
+    </body>
+</html>
